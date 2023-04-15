@@ -12,5 +12,10 @@ module.exports = {
     project: './tsconfig.json'
   },
   rules: {
+    "@typescript-eslint/space-before-function-paren": ['error', {
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'always',
+    }]
   }
 }
