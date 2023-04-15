@@ -1,13 +1,9 @@
-import express from 'express'
+import { start as startServer } from './server'
+import { printHelloWorld as printHelloWorldFromDatabase } from './database'
 
-const app = express()
+startServer()
 
-const PORT = 3000
-
-app.get('/', (req, res) => {
-  res.send('Hello world!')
-})
-
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`)
-})
+printHelloWorldFromDatabase()
+  .catch((error) => {
+    console.log('error', error)
+  })
