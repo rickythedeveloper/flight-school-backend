@@ -16,6 +16,7 @@ module.exports = {
       'anonymous': 'never',
       'named': 'never',
       'asyncArrow': 'always',
-    }]
+    }],
+    "@typescript-eslint/comma-dangle": ['error', 'only-multiline']
   }
 }
