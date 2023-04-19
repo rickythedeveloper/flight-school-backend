@@ -1,4 +1,4 @@
-import { describe, expect, jest, it } from '@jest/globals'
+import { describe, expect, it, jest } from '@jest/globals'
 import { ServerImpl } from './ServerImpl'
 import { goodBookingsHelper } from './bookings/router.test'
 import { getBookingsRouter } from './bookings/router'

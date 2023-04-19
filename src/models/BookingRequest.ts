@@ -19,7 +19,7 @@ const exampleSerialBookingRequest: SerialBookingRequest = {
   aircraftId: 1,
 }
 
-const getBookingRequestFromSerialBookingRequest = (serialBookingRequest: SerialBookingRequest) => ({
+const getBookingRequestFromSerialBookingRequest = (serialBookingRequest: SerialBookingRequest): BookingRequest => ({
   startTime: new Date(serialBookingRequest.startTime),
   endTime: new Date(serialBookingRequest.endTime),
   aircraftId: serialBookingRequest.aircraftId,

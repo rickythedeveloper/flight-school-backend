@@ -1,4 +1,4 @@
-import express, { type Request, type Response, type Router } from 'express'
+import express, { type Request, type Router } from 'express'
 import { type Booking, parseSerialBooking } from '../../models/Booking'
 import { type BookingsHelper } from './helper/BookingsHelper'
 import { type BookingRequest, parseSerialBookingRequest } from '../../models/BookingRequest'
