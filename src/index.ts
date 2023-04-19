@@ -1,9 +1,4 @@
-import { start as startServer } from './server'
-import { printHelloWorld as printHelloWorldFromDatabase } from './database'
+import { Application } from './Application'
 
-startServer()
-
-printHelloWorldFromDatabase()
-  .catch((error) => {
-    console.log('error', error)
-  })
+const application = new Application()
+application.start()
